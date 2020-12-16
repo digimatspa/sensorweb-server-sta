@@ -88,7 +88,7 @@ public class MqttBroker {
     @Value("${mqtt.broker.plaintcp.enabled}")
     private Boolean MOQUETTE_PLAINTCP_ENABLED;
 
-    @Value("${mqtt.broker.plain_tcp.port:1883}")
+    @Value("${mqtt.broker.plaintcp.port:1883}")
     private String MOQUETTE_PLAINTCP_PORT;
 
     @Autowired

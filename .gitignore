@@ -33,3 +33,4 @@ sensor-things-api-app/console.log
 .idea/*
 *.iml
 *.checkstyle
+.DS_Store
