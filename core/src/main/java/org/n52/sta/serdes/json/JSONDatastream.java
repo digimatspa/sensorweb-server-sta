@@ -83,6 +83,8 @@ public class JSONDatastream extends JSONBase.JSONwithIdNameDescriptionTime<Datas
             "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Observation";
     private final String OM_TruthObservation =
             "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_TruthObservation";
+    private final String OM_TextObservation =
+            "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_TextObservation";
     private final String obsType = "observationType";
 
     private final String uomName = "unitOfMeasurement->name";
@@ -129,6 +131,7 @@ public class JSONDatastream extends JSONBase.JSONwithIdNameDescriptionTime<Datas
                                  || observationType.equals(OM_CountObservation)
                                  || observationType.equals(OM_CategoryObservation)
                                  || observationType.equals(OM_Observation)
+                                 || observationType.equals(OM_TextObservation)
                                  || observationType.equals(OM_TruthObservation),
                          INVALID_INLINE_ENTITY_INVALID_VALUE + obsType);
             Assert.notNull(unitOfMeasurement, INVALID_INLINE_ENTITY_MISSING + "unitOfMeasurement");
